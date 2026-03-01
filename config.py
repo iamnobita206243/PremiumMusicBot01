@@ -1,0 +1,122 @@
+import re
+from os import getenv
+# ------------------------------------
+# ------------------------------------
+from dotenv import load_dotenv
+from pyrogram import filters
+# ------------------------------------
+# ------------------------------------
+load_dotenv()
+# ------------------------------------
+API_ID = getenv("API_ID", "28164938")
+API_HASH = getenv("API_HASH", "d53fd90b87686f713f6adc9428bbb6bb")
+
+EVAL = list(map(int, getenv("EVAL", "7824722052 0000000").split()))
+# ------------------------------------------------------
+BOT_TOKEN = getenv("BOT_TOKEN", "8399053049:AAE7SpMX0165d9tH_-bBeTOPwoj-5H6yNEQ")
+# -------------------------------------------------------
+OWNER_USERNAME = getenv("OWNER_USERNAME","II_YOUR_NOBITA_II")
+# --------------------------------------------------------
+BOT_USERNAME = getenv("BOT_USERNAME" , "NobitaMusicsRobot")
+# --------------------------------------------------------
+BOT_NAME = getenv("BOT_NAME" , "˹ 𝐍ᴏʙɪᴛᴀ ꭙ 𝐌ᴜsɪᴄ ˼")
+# ---------------------------------------------------------
+ASSUSERNAME = getenv("ASSUSERNAME" , "NobitaMusic")
+# ---------------------------------------------------------
+MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://iamnobita1:nobitamusic1@cluster0.k08op.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+#---------------------------------------------------------------
+DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 17000))
+# ----------------------------------------------------------------
+LOGGER_ID = int(getenv("LOGGER_ID", -1003147562251))
+# ----------------------------------------------------------------
+OWNER_ID = int(getenv("OWNER_ID", 7824722052))
+# -----------------------------------------------------------------
+HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
+# ----------------------------------------------------------------
+HEROKU_API_KEY = getenv("HEROKU_API_KEY")
+# ----------------------------------------------------------------
+UPSTREAM_REPO = getenv(
+    "UPSTREAM_REPO",
+    "https://github.com/TeamZyro/DAXXOLD",
+)
+UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "Master")
+GIT_TOKEN = getenv(
+    "GIT_TOKEN", None
+) 
+# ----------------------------------------------------------------
+API_URL = getenv("API_URL", 'https://api.nexgenbots.xyz') #youtube song url
+VIDEO_API_URL = getenv("VIDEO_API_URL", 'https://api.video.nexgenbots.xyz')
+API_KEY = getenv("API_KEY", "30DxNexGenBotsda3c23") # youtube song api key, generate free key or buy paid plan from https://console.nexgenbots.xyz
+
+API2_URL = getenv("API2_URL", "https://shrutibots.site")
+# ------------------------------------------------------------------------
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/NOBITA_SUPP0RT")
+SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/+wtkHZMKvOERiMzY1")
+SUPPORT_GROUP = SUPPORT_CHAT
+# --------------------------------------------------------------------------------
+AUTO_LEAVING_ASSISTANT = getenv("AUTO_LEAVING_ASSISTANT", "True")
+AUTO_LEAVE_ASSISTANT_TIME = int(getenv("ASSISTANT_LEAVE_TIME", "9000"))
+SONG_DOWNLOAD_DURATION = int(getenv("SONG_DOWNLOAD_DURATION", "9999999"))
+SONG_DOWNLOAD_DURATION_LIMIT = int(getenv("SONG_DOWNLOAD_DURATION_LIMIT", "9999999"))
+# --------------------------------------------------------------------------------
+SPOTIFY_CLIENT_ID = getenv("SPOTIFY_CLIENT_ID", "1c21247d714244ddbb09925dac565aed")
+SPOTIFY_CLIENT_SECRET = getenv("SPOTIFY_CLIENT_SECRET", "709e1a2969664491b58200860623ef19")
+
+PLAYLIST_FETCH_LIMIT = int(getenv("PLAYLIST_FETCH_LIMIT", 25))
+
+TG_AUDIO_FILESIZE_LIMIT = int(getenv("TG_AUDIO_FILESIZE_LIMIT", "5242880000"))
+TG_VIDEO_FILESIZE_LIMIT = int(getenv("TG_VIDEO_FILESIZE_LIMIT", "5242880000"))
+
+STRING1 = getenv("STRING_SESSION", "BQGtw0oAac44QYGUwIsGEhOH8xy8Ue7V2_ykKZBJRqeTYKCOD8R3bzI9SS641Fjs1s3LKO4cs3yP7ON5xaKknJPOOWYnGWHFEte38dRQWh52X7EfGg_vt3Y9RJUpZSQWbAFAyN6ceGTpI3a97m99cb6bvxgmZsuZ9IOcwXl5KcjgLtUPpkAp-_uJ2duSzqwcUsoPvHZQ44njcviJHEjmIQpnwEpmtpUgCa4Wbi--EnBDV3sxDmEw4ZgSSt1ZxfJjyBsez19qSHGHmWR7yNvYRA6cZtVo0iv5Ymk-fOv6ZvqRlZCZCVkkQilduXvqKCrdcSUao-jQAsIXgUSRNkJT-gqE6Gg3yAAAAAHInlxYAA")
+STRING2 = getenv("STRING_SESSION2", None)
+STRING3 = getenv("STRING_SESSION3", None)
+STRING4 = getenv("STRING_SESSION4", None)
+STRING5 = getenv("STRING_SESSION5", None)
+STRING6 = getenv("STRING_SESSION6", None)
+STRING7 = getenv("STRING_SESSION7", None)
+PROTECTION_STRING = getenv("PROTECTION", "BQBxIQMAGp-ywfGxeDJ5Et-nrhYDt95_zRYBY2Gu_2I_YD2vmX4eGboJyAnoULiJ1gYemPa_QmzVaJtXxc6BmrZXBMRgvkgsP4XMWALn1BqjSGH-bBRdO99Cu5OYIzhKP2D8f_NI1_iDibQ5z5JqPMEqgqFL-TlzF6-5A3D1maAZnchXph60ThTkipBkgQMhJxsqJXETRylclnSgsMVWFueoCqU0nf1j62_aFYGA4lx-u6s8eAlPnm7oG9oO6s6lr46hxm_ervmUxDt-yi2TjoX1RP9sOvMFceb9BwGqGswL9-kZtMbBup1RUflqtvEymFT8SMjROqg7n0i6JJnkDBm4eNjiBwAAAAH5shVUAA")
+
+BANNED_USERS = filters.user()
+adminlist = {}
+lyrical = {}
+votemode = {}
+autoclean = []
+confirmer = {}
+# ------------------------------------
+START_IMG_URL = getenv(
+    "START_IMG_URL", "https://files.catbox.moe/zeexhx.jpg"
+)
+PING_IMG_URL = getenv(
+    "PING_IMG_URL", "https://files.catbox.moe/l6ekqj.jpg"
+)
+PLAYLIST_IMG_URL = "https://files.catbox.moe/l6ekqj.jpg"
+STATS_IMG_URL = "https://files.catbox.moe/l6ekqj.jpg"
+TELEGRAM_AUDIO_URL = "https://files.catbox.moe/l6ekqj.jpg"
+TELEGRAM_VIDEO_URL = "https://files.catbox.moe/l6ekqj.jpg"
+STREAM_IMG_URL = "https://files.catbox.moe/l6ekqj.jpg"
+SOUNCLOUD_IMG_URL = "https://files.catbox.moe/l6ekqj.jpg"
+YOUTUBE_IMG_URL = "https://files.catbox.moe/l6ekqj.jpg"
+SPOTIFY_ARTIST_IMG_URL = "https://files.catbox.moe/l6ekqj.jpg"
+SPOTIFY_ALBUM_IMG_URL = "https://files.catbox.moe/l6ekqj.jpg"
+SPOTIFY_PLAYLIST_IMG_URL = "https://files.catbox.moe/l6ekqj.jpg"
+NOW_PLAYING_IMG_URL = getenv("NOW_PLAYING_IMG_URL", "https://images8.alphacoders.com/135/thumb-1920-1351572.jpeg")
+# ------------------------------------------------------------------------
+def time_to_seconds(time):
+    stringt = str(time)
+    return sum(int(x) * 60**i for i, x in enumerate(reversed(stringt.split(":"))))
+
+
+DURATION_LIMIT = int(time_to_seconds(f"{DURATION_LIMIT_MIN}:00"))
+# -----------------------------------------------------------------------------
+if SUPPORT_CHANNEL:
+    if not re.match("(?:http|https)://", SUPPORT_CHANNEL):
+        raise SystemExit(
+            "[ERROR] - Your SUPPORT_CHANNEL url is wrong. Please ensure that it starts with https://"
+        )
+
+if SUPPORT_CHAT:
+    if not re.match("(?:http|https)://", SUPPORT_CHAT):
+        raise SystemExit(
+            "[ERROR] - Your SUPPORT_CHAT url is wrong. Please ensure that it starts with https://"
+        )
+# ---------------------------------------------------------------------------------------
