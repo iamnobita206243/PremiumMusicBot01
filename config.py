@@ -99,7 +99,7 @@ YOUTUBE_IMG_URL = "https://files.catbox.moe/l6ekqj.jpg"
 SPOTIFY_ARTIST_IMG_URL = "https://files.catbox.moe/l6ekqj.jpg"
 SPOTIFY_ALBUM_IMG_URL = "https://files.catbox.moe/l6ekqj.jpg"
 SPOTIFY_PLAYLIST_IMG_URL = "https://files.catbox.moe/l6ekqj.jpg"
-NOW_PLAYING_IMG_URL = getenv("NOW_PLAYING_IMG_URL", "https://images8.alphacoders.com/135/thumb-1920-1351572.jpeg")
+NOW_PLAYING_IMG_URL = getenv("NOW_PLAYING_IMG_URL", "https://files.catbox.moe/4g9nyc.jpg")
 # ------------------------------------------------------------------------
 def time_to_seconds(time):
     stringt = str(time)
