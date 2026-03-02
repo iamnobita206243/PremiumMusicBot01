@@ -41,7 +41,7 @@ git+https://github.com/TeamZyro/daxxhub.git
 youtube-search-python
 git+https://github.com/KurimuzonAkuma/pyrogram.git
 git+https://github.com/yt-dlp/yt-dlp.git
-py-tgcalls==0.9.7 
+py-tgcalls==2.2.11 
 #git+https://github.com/MrZyro/ZyroTgCall.git
 SpeechRecognition
 spotipy
